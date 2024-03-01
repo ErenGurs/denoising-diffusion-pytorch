@@ -1,4 +1,4 @@
-name: ddpm-lucidrains2
+name: ddpm-lucidrains
 channels:
   - pytorch
   - defaults
