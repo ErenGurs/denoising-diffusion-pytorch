@@ -10,6 +10,13 @@
             "request": "launch",
             "program": "train.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Train train_accelerate.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_accelerate.py",
+            "console": "integratedTerminal"
         }
     ]
 }

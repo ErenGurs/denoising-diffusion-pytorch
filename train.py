@@ -15,7 +15,7 @@ diffusion = GaussianDiffusion(
     model,
     image_size = 128,
     timesteps = 1000    # number of steps
-).cuda()
+).cuda('cuda:1')
 
 parser = argparse.ArgumentParser()
 args = parser.parse_args()
@@ -23,8 +23,8 @@ args.run_name = "DDPM_Uncondtional"
 args.epochs = 500
 args.batch_size = 12
 args.image_size = 128
-args.dataset_path = r"./landscape_img_folder"
-args.device = "cuda"
+args.dataset_path = r"/mnt/task_runtime/ddpm/landscape_img_folder"
+args.device = "cuda:1"
 args.lr = 3e-4
 
 dataloader = get_data(args)
