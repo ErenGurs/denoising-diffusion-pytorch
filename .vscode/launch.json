@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Train train2.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train2.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Train train.py",
             "type": "python",
             "request": "launch",
